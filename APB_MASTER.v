@@ -193,7 +193,7 @@ output reg     [SLAVES_NUM-1:0]  PSEL
        end
      else if(next_state == ENABLE)
        begin
-         PENABLE <= 1'b1;
+         PENABLE <= 1'b0;
          if(PREADY)
            OUT_SLVERR <= PSLVERR ;
            begin
